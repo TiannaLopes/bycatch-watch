@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+
+# BycatchWatch
+
+BycatchWatch is a real-time bycatch monitoring and mitigation system designed to help BC fisheries reduce their environmental impact. This project provides a software-first solution that allows fishers to track, monitor, and reduce bycatch in real-time.
+
+## Project Overview
+
+BycatchWatch offers the following features:
+
+- Bycatch logging and tracking
+- Real-time bycatch reduction recommendations
+- Data visualization for bycatch trends
+- Compliance reporting for regulatory bodies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,63 +20,53 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when changes are made.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production and optimizes it for best performance. The build is minified, and filenames include the hashes.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Note: This is a one-way operation. Once ejected, you can't go back! This gives full control over the configuration.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To learn more about Create React App, refer to the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- For more information on React, check the [React documentation](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+BycatchWatch uses GitHub Actions for CI/CD, and the frontend is deployed on GitHub Pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### How to Deploy
 
-### Analyzing the Bundle Size
+1. Build the app using `npm run build`.
+2. Deploy the production build to GitHub Pages using GitHub Actions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technical Stack
 
-### Making a Progressive Web App
+- **Frontend**: React, Bootstrap, React-Leaflet (for maps)
+- **Backend**: Node.js, Express.js (for future API development)
+- **Database**: Firebase Firestore
+- **Real-Time Alerts**: Firebase Cloud Messaging
+- **Deployment**: GitHub Pages (frontend), Heroku (backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Features
 
-### Advanced Configuration
+1. **Real-Time Bycatch Logging**: Fishers can log bycatch and track species data in real time.
+2. **Bycatch Reduction Recommendations**: Provides fishers with real-time recommendations on modifying techniques or fishing locations based on bycatch risks.
+3. **Heatmaps**: Displays heatmaps of different sea life species during different parts of the year.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Development
 
-### Deployment
+- API integrations for marine life data from sources like NASA, NOAA, and AquaMaps.
+- Backend for more advanced bycatch predictions using AI/ML.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+BycatchWatch is designed to support fisheries in complying with environmental regulations and improving sustainability practices.

@@ -26,7 +26,6 @@ function App() {
         </header>
         <main>
           <Routes>
-            {/* Home Route */}
             <Route
               path="/"
               element={
